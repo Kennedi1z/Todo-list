@@ -2,9 +2,9 @@ import './App.css'
 
 function App() {
   const todoList = [
-    { id: 1, text: 'Sweep the floor' },
-    { id: 2, text: 'Mop the kitchen' },
-    { id: 3, text: 'Take out the trash' },
+    { id: 1, text: 'Do the dishes' },
+    { id: 2, text: 'Sweep the floor' },
+    { id: 3, text: 'Mop the kitchen' },
   ]
 
   return (
