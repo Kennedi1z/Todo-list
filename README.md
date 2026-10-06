@@ -1,16 +1,18 @@
-# React + Vite
+# My Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+# Description:
 
-Currently, two official plugins are available:
+This app was created to be a todo list to create a list of tasks to be done.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+# Installation: make sure you have node.js installed.
 
-## React Compiler
+Put in `npx create-vite@latest --template react .` into the terminal.
+Then you put `npm install`.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+# How to run
 
-## Expanding the Oxlint configuration
+Put in `http://localhost:5173/` in browser to run the server.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+
+
+
