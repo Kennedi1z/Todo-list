@@ -1,19 +1,20 @@
-function TodoList(){
-  const todoList = [
-    { id: 1, text: 'Sweep the floor' },
-    { id: 2, text: 'Mop the kitchen' },
-    { id: 3, text: 'Take out the trash' },
-  ];
+import TodoListItem from './TodoListItem.jsx';
 
-  return (
 
-      <ul>
-        {todoList.map((todo) => (
-          <li key={todo.id}>{todo.text}</li>
-        ))}
-      </ul>
-  );
+export const todos = [
+    { id: 1, title: 'Sweep the floor' },
+    { id: 2, title: 'Mop the kitchen' },
+    { id: 3, title: 'Take out the trash' }
+];
+
+function TodoList({ todoList }) {
+    return (
+        <ul>
+            {todoList.map((todo) => (
+                <TodoListItem key={todo.id} todo={todo} />
+            ))}
+        </ul>
+    );
 }
-
 
 export default TodoList;
