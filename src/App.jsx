@@ -1,8 +1,13 @@
-
 import TodoForm from './TodoForm.jsx';
 import { useState } from 'react';
-import TodoList ,{todos} from './TodoList.jsx';
+import TodoList from './TodoList.jsx';
 import './App.css'
+
+ const todos = [
+    { id: 1, title: 'Sweep the floor' },
+    { id: 2, title: 'Mop the kitchen' },
+    { id: 3, title: 'Take out the trash' }
+];
 
 function App() {
   const todoList = [
