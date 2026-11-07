@@ -10,12 +10,18 @@ import './App.css'
 ];
 
 function App() {
-  const [todoList, setTodoList] = useState(todos);
-
+  const [todoList, setTodoList] = useState([]);
+    const addTodo = (todoTitle) => {
+      const newTodo = {
+        id:Date.now(),
+        title: todoTitle,
+      };
+      setTodoList((prev) => [...newTodo, ...prev]);
+      }
   return (
     <div>
       <h1>My Todo List</h1>
-      <TodoForm />
+      <TodoForm onAddTodo={addTodo} />
       <TodoList todoList={todoList} />
     </div>
   );
