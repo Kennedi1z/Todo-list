@@ -5,7 +5,7 @@ const TodoForm = ({ onAddTodo }) => {
 
     const handleAddTodo = (event) => {
         event.preventDefault();
-        const todoTitle = inputRef.current.value.trim();
+        const todoTitle = event.target.todoTitle.value.trim();
 
         if(!todoTitle) return;
         onAddTodo(todoTitle);
@@ -18,7 +18,7 @@ const TodoForm = ({ onAddTodo }) => {
     return(
         <form onSubmit={handleAddTodo}>
             <label htmlFor="todoTitle">Todo</label>
-            <input ref={inputRef} type="text" id="todoTitle" />
+            <input ref={inputRef} type="text" id="todoTitle" name="todoTitle" />
             <button type="submit">Add Todo</button>
         </form>
 
