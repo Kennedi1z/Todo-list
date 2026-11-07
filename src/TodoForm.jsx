@@ -5,17 +5,21 @@ const TodoForm = ({ onAddTodo }) => {
 
     const handleAddTodo = (event) => {
         event.preventDefault();
-        const todoTitle = event.target.form.todoTitle.value.trim();
+        const todoTitle = inputRef.current.value.trim();
+
+        if(!todoTitle) return;
+        onAddTodo(todoTitle);
+        event.target.reset();
         console.log(todoTitle);
         inputRef.current.focus();
-        console.log(inputRef);
+    
 
     };    
     return(
         <form onSubmit={handleAddTodo}>
             <label htmlFor="todoTitle">Todo</label>
             <input ref={inputRef} type="text" id="todoTitle" />
-            <button type="submit" onClick={handleAddTodo}>Add Todo</button>
+            <button type="submit">Add Todo</button>
         </form>
 
     );
