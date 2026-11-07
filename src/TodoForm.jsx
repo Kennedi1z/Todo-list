@@ -8,6 +8,7 @@ const TodoForm = ({ onAddTodo }) => {
         const todoTitle = event.target.form.todoTitle.value.trim();
         console.log(todoTitle);
         inputRef.current.focus();
+        console.log(inputRef);
 
     };    
     return(
